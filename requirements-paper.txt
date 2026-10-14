@@ -1,0 +1,9 @@
+# Environment of the reported experiments: Python 3.10, CUDA 12.1 on Linux.
+# Install the CUDA build of torch/torchvision first (see README).
+-r requirements-eval.txt
+torch==2.5.1
+torchvision==0.20.1
+face-alignment==1.4.1
+opencv-python>=4.8,<5
+Pillow>=10,<13
+matplotlib>=3.8,<4

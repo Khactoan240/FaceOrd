@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "faceord"
+version = "1.1.0"
+description = "Landmark-guided ordinal multi-task learning for facial age and gender prediction"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "Thien Bao Nguyen"}, {name = "Khac Toan Nguyen"}]
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements-eval.txt"]}
+
+[project.optional-dependencies]
+model = ["torch>=2.3,<3", "torchvision>=0.18,<1", "opencv-python>=4.8,<5", "Pillow>=10,<13", "matplotlib>=3.8,<4"]
+landmarks = ["face-alignment==1.4.1"]
+dlib = ["dlib>=19.24"]
+official-baselines = ["timm==0.8.13.dev0"]
+dev = ["pytest>=8,<10"]
+
+[tool.setuptools.packages.find]
+include = ["faceord*", "baselines*", "analysis*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

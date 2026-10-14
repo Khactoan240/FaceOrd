@@ -1,0 +1,3 @@
+# The official MiVOLO code requires timm; clone the MiVOLO/FaceXFormer repositories separately.
+-r requirements.txt
+timm==0.8.13.dev0

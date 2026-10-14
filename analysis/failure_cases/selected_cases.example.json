@@ -1,0 +1,13 @@
+{
+  "source_sha256": "<sha256 of the prediction file passed with --pred>",
+  "cases": [
+    {
+      "slot": "A_adjacent_G5_to_G4",
+      "sample_idx": 0,
+      "failure_factor": "adjacent-age ambiguity",
+      "landmark_overlay": false,
+      "visual_note": "Short description confirmed by visual inspection."
+    }
+  ],
+  "_instructions": "Copy to selected_cases.json and list exactly six cases chosen from the contact sheets in results/failure_cases/candidates/. source_sha256 is reported in results/failure_cases/oof_error_stats.json."
+}

@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the FaceOrd paper."
+type: software
+title: "FaceOrd: Landmark-guided ordinal multi-task learning for facial age and gender prediction"
+authors:
+  - family-names: Nguyen
+    given-names: Thien Bao
+  - family-names: Nguyen
+    given-names: Khac Toan
+version: 1.1.0
+date-released: '2026-10-13'
+license: MIT

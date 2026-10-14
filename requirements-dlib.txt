@@ -1,0 +1,2 @@
+# Optional dlib landmark backend (LANDMARK_BACKEND="dlib"); building dlib requires CMake.
+dlib>=19.24
